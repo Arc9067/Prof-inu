@@ -1,0 +1,175 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+}
+body header {
+  height: 50px;
+  width: 100%;
+  background-color: #FFB329;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body header h3 {
+  font-size: 40px;
+  color: #24130C;
+}
+body .home {
+  height: 90vh;
+  width: 100%;
+  background-color: #24130C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation-name: homea;
+          animation-name: homea;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+@-webkit-keyframes homea {
+  20% {
+    background-color: red;
+  }
+  40% {
+    background-color: green;
+  }
+  60% {
+    background-color: #000;
+  }
+  80% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #000;
+  }
+}
+@keyframes homea {
+  20% {
+    background-color: red;
+  }
+  40% {
+    background-color: green;
+  }
+  60% {
+    background-color: #000;
+  }
+  80% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #000;
+  }
+}
+body .home .inner-home {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .home .inner-home h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-top: 30px;
+  color: #FFB329;
+}
+body .home .inner-home p {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+  -webkit-animation-name: homep;
+          animation-name: homep;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+@-webkit-keyframes homep {
+  20% {
+    color: white;
+  }
+  40% {
+    color: white;
+  }
+  60% {
+    color: white;
+  }
+  80% {
+    color: #000;
+    font-size: 22px;
+  }
+  100% {
+    color: white;
+  }
+}
+@keyframes homep {
+  20% {
+    color: white;
+  }
+  40% {
+    color: white;
+  }
+  60% {
+    color: white;
+  }
+  80% {
+    color: #000;
+    font-size: 22px;
+  }
+  100% {
+    color: white;
+  }
+}
+body .home .inner-home .home-btn {
+  height: 200px;
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .home .inner-home .home-btn .in-btn {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .home .inner-home .home-btn .in-btn button {
+  padding: 10px 25px;
+  border: none;
+  outline: none;
+  background-color: #FFB329;
+}
+body .home .inner-home .home-btn .in-btn button a {
+  text-decoration: none;
+  color: #24130C;
+  font-weight: bold;
+}
+body .home .inner-home .home-btn .in-btn:nth-child(2) {
+  background: url(./img/Asset\ 4@4x.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+}
+@media screen and (max-width: 400px) {
+  body .home .inner-home {
+    width: 90%;
+  }
+}/*# sourceMappingURL=index.css.map */

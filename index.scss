@@ -1,0 +1,156 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    // background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;;
+
+    header{
+        height: 50px;
+        width: 100%;
+        background-color: #FFB329;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        h3{
+            font-size: 40px;
+            color: #24130C;
+        }
+    }
+
+    .home{
+        height: 90vh;
+        width: 100%;
+        background-color: #24130C;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: homea;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+
+        @keyframes homea {
+            20%{
+                background-color: red;
+            }
+            40%{
+                background-color: green;
+            }
+            60%{
+                background-color: #000;
+            }
+            80%{
+                background-color: #fff;
+            }
+            100%{
+                background-color: #000;
+            }
+        }
+
+        .inner-home{
+            height: 100%;
+            width: 50%;
+            // background-color: red;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h3{
+                font-size: 30px;
+                text-transform: uppercase;
+                font-family: 'Montserrat', sans-serif;
+                text-align: center;
+                margin-top: 30px;
+                color: #FFB329;
+            }
+            p{
+                font-size: 20px;
+                text-align: center;
+                margin-top: 30px;
+                color: white;
+                animation-name: homep;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+                animation-play-state: running;
+        
+            }
+
+            @keyframes homep {
+                20%{
+                    color: white;
+                }
+                40%{
+                    color: white;
+                }
+                60%{
+                    color: white;
+                }
+                80%{
+                    color: #000;
+                    font-size: 22px;
+                }
+                100%{
+                    color: white;
+                }
+                }
+
+            .home-btn{
+                height: 200px;
+                width: 100%;
+                // background-color: blue;
+                margin-top: 50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .in-btn{
+                    height: 100%;
+                    width: 45%;
+                    // background-color: green;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    button{
+                        padding: 10px 25px;
+                        border: none;
+                        outline: none;
+                        background-color: #FFB329;
+
+                        a{
+                            text-decoration: none;
+                            color: #24130C;
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+                .in-btn:nth-child(2){
+                    background: url(./img/Asset\ 4@4x.png);
+                    background-repeat: no-repeat;
+                    background-size: 80%;
+                    background-position: center;
+                }
+            }
+        }
+    
+    }
+
+    @media screen and (max-width:400px){
+
+        .home{
+            .inner-home{
+                width: 90%;
+            }
+        }
+    }
+
+}
+
